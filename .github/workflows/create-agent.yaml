@@ -1,0 +1,23 @@
+name: Create Okteto Agent on Issue
+
+on:
+  issues:
+    types: [opened]
+
+jobs:
+  create-agent:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Create Okteto Agent
+      uses: rlamana/create-agent@main
+      env:
+        OKTETO_TOKEN: ${{ secrets.OKTETO_TOKEN }}
+        OKTETO_CONTEXT: ${{ secrets.OKTETO_CONTEXT }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        prompt: |
+          Issue Title: ${{ github.event.issue.title }}
+          Issue Description: ${{ github.event.issue.body }}
+        repository: ${{ github.event.repository.html_url }}
+
+  
