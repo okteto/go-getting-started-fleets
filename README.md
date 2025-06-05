@@ -1,5 +1,5 @@
-# Getting Started on Okteto with Go
+# Comenzando con Okteto y Go
 
-This example shows how to use the [Okteto CLI](https://github.com/okteto/okteto) to develop a Go Sample App directly in Kubernetes. The Go Sample App is deployed using Kubernetes manifests.
+Este ejemplo muestra cómo usar el [CLI de Okteto](https://github.com/okteto/okteto) para desarrollar una aplicación de ejemplo en Go directamente en Kubernetes. La aplicación de ejemplo en Go se despliega usando manifiestos de Kubernetes.
 
-This is the application used for the [Getting Started on Okteto with Go](https://www.okteto.com/docs/samples/golang/) tutorial.
+Esta es la aplicación utilizada para el tutorial [Comenzando con Okteto y Go](https://www.okteto.com/docs/samples/golang/).
